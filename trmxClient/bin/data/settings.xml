@@ -1,0 +1,9 @@
+<settings>
+	<clientName>RPi1</clientName>
+	<serverName>tiptree</serverName>
+    <serverIpAddress>192.168.0.20</serverIpAddress>
+    <sendPort>9000</sendPort>
+    <recvPort>9001</recvPort>
+    <mediaDirPath>/home/pi/media/</mediaDirPath>
+    <frameRate>24</frameRate>
+</settings>
