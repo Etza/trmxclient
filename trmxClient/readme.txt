@@ -8,10 +8,9 @@ Angela Gabereau // 2015
 
 __Summary
 
-This is the app that sites on the RPi2 and recieves commands from the Server computer running _Transmestizx OSC Communicator Server_ 
+This is the app that sites on the RPi2 and receives commands from the Server computer running Pure Data.
 
-Application configuration is loaded via an xml file.  Configuration is specific to each installation. 
-Commands are send to server via OSC.
+Application configuration is loaded via an xml file.  Configuration is specific to each installation.
 
 
 
