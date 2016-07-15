@@ -30,7 +30,7 @@ __Installation
 
 	3. Set the configuration variables in /bin/data/settings.xml:
 
-	3.1. Set the IP address of the server, which will recieve the messages sent from this client.  On the server, open a terminal and execute the following command:
+	3.1. Set the IP address of the server, which will receive the messages sent from this client.  On the server, open a terminal and execute the following command:
 		hostname -i
 	Write down the ip address, and add it:
 		<serverIpAddress>192.168.2.2</serverIpAddress>
@@ -40,7 +40,7 @@ __Installation
 	    <sendPort>9000</sendPort>
     	<recvPort>9001</recvPort>
 
-	3.3. Set the directory that contains the media files.  Could be on HD or USB.
+	3.3. Set the directory that contains the media files.  Could be on HD or USB. For videos it is recomended to use photo-JPEG compression - quality 75%, 15 fps.
 
 		<mediaDirPath>/home/media<mediaDirPath>
 
