@@ -1,0 +1,71 @@
+#N canvas 180 149 952 526 10;
+#X declare -lib mrpeach;
+#X obj 88 178 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#N canvas 276 54 1035 686 connect 0;
+#X obj 227 107 packOSC;
+#X obj 227 134 udpsend;
+#X msg 149 58 connect 192.168.0.11 9001;
+#X obj 227 81 r pi11;
+#X obj -3 60 import mrpeach;
+#X obj 161 238 udpreceive 9000;
+#X obj 161 265 unpackOSC;
+#X text 159 214 192.168.0.11;
+#X text 322 58 el ip del RPi;
+#X obj 165 400 metro 1000;
+#X obj 162 378 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 167 447 s pi11;
+#X floatatom 161 315 5 0 0 0 - - -;
+#X text 571 419 ejemplo para recibir el numero de fotograma del video
+;
+#X obj 161 291 routeOSC /ch1/receive_current_frame /receive_dir_list
+;
+#X msg 165 423 send /ch1/get_current_frame;
+#X obj 317 315 print;
+#X text 580 77 el servidor necesita tener un ip fijo - definido en
+/bin/data/settings.xml en el RPi;
+#X text 572 280 para escuchar info desde trmxclient -> el puerto esta
+definido tambien en settings.xml;
+#X connect 0 0 1 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 14 0;
+#X connect 9 0 15 0;
+#X connect 10 0 9 0;
+#X connect 14 0 12 0;
+#X connect 14 1 16 0;
+#X connect 15 0 11 0;
+#X restore 91 48 pd connect;
+#X obj 93 125 s connect;
+#X obj 93 104 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 110 103 1;
+#X msg 95 435 send /ch1/set_alpha \$1;
+#X msg 95 407 255;
+#X msg 88 208 ch1/set_media 1;
+#X text 143 401 poner canal 1 en visibilidad maxima;
+#X msg 89 322 send /ch1/play;
+#X obj 90 299 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 132 101 bang para conectar el servidor con PD y el RPi;
+#X text 168 50 abre para explicación de configuración de la conexión
+;
+#X text 84 276 si es un video - poner en play;
+#X msg 657 203 send /request_dir_list;
+#X obj 657 240 s rpi;
+#X obj 89 237 s rpi;
+#X obj 89 358 s rpi;
+#X obj 95 471 s rpi;
+#X text 107 177 bang para cargar media (imagen fija o video);
+#X text 583 164 NB: el numero de tu media (en /home/media) puede ser
+obtenido con este comando - mira la ventana pd para la respuesta;
+#X connect 0 0 7 0;
+#X connect 3 0 2 0;
+#X connect 5 0 18 0;
+#X connect 6 0 5 0;
+#X connect 7 0 16 0;
+#X connect 9 0 17 0;
+#X connect 10 0 9 0;
+#X connect 14 0 15 0;
