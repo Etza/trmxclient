@@ -128,7 +128,7 @@ void trmxMediaFrame::loadVideo(){
 
 	// Standard of Video Player 
 	videoPlayer = ofVideoPlayer();
-	videoPlayer.setPixelFormat(OF_PIXELS_RGBA);
+	videoPlayer.setPixelFormat(OF_PIXELS_NATIVE);
 	
 	videoPlayer.loadMovie(filePath);
 }
