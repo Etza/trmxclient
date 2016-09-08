@@ -180,12 +180,12 @@ void ofApp::initializeMediaFrames(){
 	mediaFrames.back().loadMedia("media/negro.jpg");
 
 	ofLog(OF_LOG_NOTICE, "__initialize third frame");
-    mediaFrames.push_back(trmxMediaFrame());
-    mediaFrames.back().loadMedia("media/negro.jpg");
+    	mediaFrames.push_back(trmxMediaFrame());
+    	mediaFrames.back().loadMedia("media/negro.jpg");
 
 	ofLog(OF_LOG_NOTICE, "__initialize fourth frame");
-    mediaFrames.push_back(trmxMediaFrame());
-    mediaFrames.back().loadMedia("media/negro.jpg");
+    	mediaFrames.push_back(trmxMediaFrame());
+    	mediaFrames.back().loadMedia("media/negro.jpg");
 
 }
 
