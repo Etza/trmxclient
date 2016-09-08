@@ -64,10 +64,10 @@ void ofApp::setup(){
 //	mediaFrames[1].fadeTo(0, 5);
 
 	mediaFrames[2].setAlpha(0);
-//  mediaFrames[2].fadeTo(0, 5);
+//  	mediaFrames[2].fadeTo(0, 5);
 
 	mediaFrames[3].setAlpha(0);
-//  mediaFrames[3].fadeTo(0, 5);
+//  	mediaFrames[3].fadeTo(0, 5);
 
 }
 
@@ -870,10 +870,8 @@ string ofApp::getOscMsgAsString(ofxOscMessage m){
 
 vector<string> ofApp::explode( const string &delimiter, const string &str)
 {
-    ofLog(OF_LOG_NOTICE, "A");
-    ofLog(OF_LOG_NOTICE, delimiter);
+    
     ofLog(OF_LOG_NOTICE, str);
-    ofLog(OF_LOG_NOTICE, "Z");
 
     vector<string> arr;
 
