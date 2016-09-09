@@ -1,4 +1,4 @@
-# trmxclient
+# trmxClient
 Video and image player made with OpenFrameworks for RPi2. All functions of trmxClient are addressable by OSC. 
 
 The code was written by Angela Gabereau (Montréal) in 2015 for the interactive audiovisual installation "Transmestizx" by Daniela Moreno Wray (http://dmw.hotglue.me/?transmestiza) in Quito, Ecuador. 
