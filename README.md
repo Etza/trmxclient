@@ -13,5 +13,4 @@ Improvements needed in the code:
 3. It would be good if Pause, instead of being a toggle, could be distinguished by something like pause 1 pause 0
 4. Rename the layers in the order that they are on top of each other - from 1 (bottom) to 4 (top)
 
-
-
+Please feel free to fork, use, adapt.
