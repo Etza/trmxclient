@@ -11,7 +11,7 @@ Improvements needed in the code:
 1. The media file system needs to recognise alphabetic or numerical order and not change all its media numbers when new media is added at a later letter or number.
 2. Currently the internal alpha fade system does not permit rapid (less than 2 or 3 seconds) x-fades.
 3. It would be good if Pause, instead of being a toggle, could be distinguished by something like pause 1 pause 0
-4. Rename the layers in the order that they are on top of each other - from 1 (bottom) to 4 (top)
+4. Rename the layers (mediaframes) in the order that they are on top of each other - from 1 (bottom) to 4 (top) - or add a command permitting the assignation of a stack number to a mediaframe.
 
 Other tasks pending: Improve documentation, upload the precompiled disk image for Rpi.
 
