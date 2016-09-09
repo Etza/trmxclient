@@ -3,7 +3,7 @@ Video and image player made with OpenFrameworks for Raspberry Pi 2. All function
 
 The code was written by Angela Gabereau (Montréal) in 2015 for the interactive audiovisual installation "Transmestizx" by Daniela Moreno Wray (http://dmw.hotglue.me/?transmestiza) in Quito, Ecuador. 
 
-The application runs on Raspberry Pi 2 with Archlinux and OpenFrameworks 0.9.3. Thanks to Arturo Castro from OpenFrameworks for support. Instructions for installation > http://openframeworks.cc/setup/raspberrypi/raspberry-pi-getting-started-archlinux/
+The application runs on Raspberry Pi 2 with Archlinux (Gstreamer 1.8.3-1 and gst-omx 1.2.0-1) and OpenFrameworks 0.9.3. Thanks to Arturo Castro from OpenFrameworks for support. Instructions for installation > http://openframeworks.cc/setup/raspberrypi/raspberry-pi-getting-started-archlinux/
 
 We recommend using Berryboot to install the latest Archlinux on your SSD card http://www.berryterminal.com/doku.php/berryboot
 
