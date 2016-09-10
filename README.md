@@ -5,8 +5,6 @@ The code was written by Angela Gabereau (Montréal) in 2015 for the interactive 
 
 The application runs on Raspberry Pi 2 with Archlinux (Gstreamer 1.8.3-1 and gst-omx 1.2.0-1) and OpenFrameworks 0.9.3. Thanks to Arturo Castro from OpenFrameworks for support. Instructions for installation > http://openframeworks.cc/setup/raspberrypi/raspberry-pi-getting-started-archlinux/
 
-We recommend using Berryboot to install the latest Archlinux on your SSD card http://www.berryterminal.com/doku.php/berryboot
-
 Improvements needed in the code:
 1. The media file system needs to recognise alphabetic or numerical order and not change all its media numbers when new media is added at a later letter or number.
 2. Currently the internal alpha fade system does not permit rapid (less than 2 or 3 seconds) x-fades.
