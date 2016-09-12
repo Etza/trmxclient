@@ -4,20 +4,23 @@
 //========================================================================
 
 
-// this sets colour processing to be done on GPU - otherwise will be black and white
+
 
 int main(){
-	
+
+// this sets colour processing to be done on GPU - otherwise will be black and white
+
 	ofGLESWindowSettings settings;
 	settings.setGLESVersion(2);
 	ofCreateWindow(settings);
 	return ofRunApp(settings);
-}
+//}
 
+//int main( ){
 
-int main( ){
-
-	ofSetupOpenGL(1280, 780, OF_WINDOW);			// <-------- setup the GL context
+	// setup the GL context
+	ofSetupOpenGL(1280, 780, OF_WINDOW);	
+	// hide cursor
 	ofHideCursor();
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN
