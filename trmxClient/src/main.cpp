@@ -8,8 +8,8 @@
 
 int main(){
 
-// this sets colour processing to be done on GPU when OF_NATIVE_PIXELS - otherwise will be black and white - 
-// however it also cuts 200 px off the right hand side of the screen !
+// this sets colour processing to be done on GPU when OF_PIXELS_NATIVE - otherwise will be black and white - 
+// however it also cuts 200 px off the right hand side of the screen ! comment for b&w or set to RGB
 
 	ofGLESWindowSettings settings;
 	settings.setGLESVersion(2);
