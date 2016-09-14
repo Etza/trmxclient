@@ -8,18 +8,19 @@
 
 int main(){
 
-// this sets colour processing to be done on GPU - otherwise will be black and white
+// this sets colour processing to be done on GPU when OF_NATIVE_PIXELS - otherwise will be black and white - 
+// however it also cuts 200 px off the right hand side of the screen !
 
 	ofGLESWindowSettings settings;
 	settings.setGLESVersion(2);
 	ofCreateWindow(settings);
-	return ofRunApp(settings);
+	return ofRunApp(new ofApp);
 //}
 
 //int main( ){
 
 	// setup the GL context
-	ofSetupOpenGL(1280, 780, OF_WINDOW);	
+	ofSetupOpenGL(1280, 720, OF_WINDOW);	
 	// hide cursor
 	ofHideCursor();
 	// this kicks off the running of my app
