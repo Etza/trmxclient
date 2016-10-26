@@ -755,8 +755,8 @@ void ofApp::keyPressed(int key){
 			// mediaFrames[1].setAlpha(255);
     		break;
     	case 's':
-    		mediaFrames[0].fadeIn(100000);
-    		mediaFrames[1].fadeIn(100000);
+    		mediaFrames[0].fadeIn(1000);
+    		mediaFrames[1].fadeIn(1000);
     		// mediaFrames[0].setAlpha(150);
     		// mediaFrames[1].setAlpha(150);
     		break;
@@ -776,10 +776,12 @@ void ofApp::keyPressed(int key){
             mediaFrames[0].play();
             break;
         case 'x':
-            loadMediaFromDir(0, 2);
+            loadMediaFromDir(0, 1);
+            mediaFrames[0].play();
             break;
         case 'c':
-            loadMediaFromDir(0, 3);
+            loadMediaFromDir(0, 2);
+            mediaFrames[0].play();
             break;
         case 'v':
             loadMediaFromDir(1, 1);

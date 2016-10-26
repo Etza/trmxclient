@@ -14,7 +14,8 @@ trmxMediaFrame::trmxMediaFrame(){
 
 	// By default, 
 	// Scale media to screen size
-	setNativeSize(true);
+    setNativeSize(false);
+    
 	// Loop videos
 	setLoopVideo(true);
 	setMinFadeToAlpha(0);
@@ -26,6 +27,9 @@ trmxMediaFrame::trmxMediaFrame(){
     millisecondsToFade = 0;
     startTime = ofGetElapsedTimeMillis();
     switchTime = 0;
+    
+    videoPlayer = ofVideoPlayer();
+    videoPlayer.setPixelFormat(OF_PIXELS_NATIVE);
 }
 
 void trmxMediaFrame::update(){
@@ -125,11 +129,6 @@ void trmxMediaFrame::loadImage(){
     image.loadImage(filePath);
 }
 void trmxMediaFrame::loadVideo(){
-
-	// Standard of Video Player 
-	videoPlayer = ofVideoPlayer();
-	videoPlayer.setPixelFormat(OF_PIXELS_NATIVE);
-	
 	videoPlayer.loadMovie(filePath);
 }
 bool trmxMediaFrame::isMediaImage(){

@@ -8,24 +8,24 @@
 
 int main(){
 
-// this sets colour processing to be done on GPU when OF_PIXELS_NATIVE - otherwise will be black and white - 
-// however it also cuts 200 px off the right hand side of the screen ! comment for b&w or set to RGB
-
+// using programmable renderer GLES2 with OF_PIXELS_NATIVE sets colour processing to be done on GPU - otherwise will be black and white
+    
 	ofGLESWindowSettings settings;
 	settings.setGLESVersion(2);
-	ofCreateWindow(settings);
-	return ofRunApp(new ofApp);
-//}
-
-//int main( ){
+    settings.width = 1280;
+    settings.height = 720;
+   
+    ofCreateWindow(settings);
+    ofHideCursor();
+	ofRunApp(new ofApp);
 
 	// setup the GL context
-	ofSetupOpenGL(1280, 720, OF_WINDOW);	
+	//ofSetupOpenGL(1280, 720, OF_WINDOW);
 	// hide cursor
-	ofHideCursor();
+	//ofHideCursor();
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN
 	// pass in width and height too:
-	ofRunApp( new ofApp());
+	//ofRunApp( new ofApp());
 
 }
