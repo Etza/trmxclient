@@ -38,7 +38,7 @@ void ofApp::setup(){
 	font.loadFont("futura_book.otf", 8);
 	titleFont.loadFont("futura_book.otf", 16);
 
-	displayInfo = true;
+	displayInfo = false;
 	pingFinity = true;
 
 	// ofToggleFullscreen();
