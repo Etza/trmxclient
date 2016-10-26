@@ -13,8 +13,9 @@ trmxMediaFrame::trmxMediaFrame(){
     isVideo = false;
 
 	// By default, 
-	// Scale media to screen size
-	setNativeSize(true);
+	// Scale media to screen size (false)
+    setNativeSize(false);
+    
 	// Loop videos
 	setLoopVideo(true);
 	setMinFadeToAlpha(0);
@@ -26,6 +27,9 @@ trmxMediaFrame::trmxMediaFrame(){
     millisecondsToFade = 0;
     startTime = ofGetElapsedTimeMillis();
     switchTime = 0;
+    
+    videoPlayer = ofVideoPlayer();
+    videoPlayer.setPixelFormat(OF_PIXELS_NATIVE);
 }
 
 void trmxMediaFrame::update(){
@@ -127,8 +131,8 @@ void trmxMediaFrame::loadImage(){
 void trmxMediaFrame::loadVideo(){
 
 	// Standard of Video Player 
-	videoPlayer = ofVideoPlayer();
-	videoPlayer.setPixelFormat(OF_PIXELS_NATIVE);
+	//videoPlayer = ofVideoPlayer();
+	
 	
 	videoPlayer.loadMovie(filePath);
 }
@@ -331,7 +335,7 @@ void trmxMediaFrame::calculateAlphaFade(int tA, int mTF){
 		//ofLog(OF_LOG_NOTICE, "fadeUp %d", fadeUp);
 		ofLog(OF_LOG_NOTICE, "alpha %d", alpha);
 		ofLog(OF_LOG_NOTICE, "deltaAlpha %d", deltaAlpha);
-		ofLog(OF_LOG_NOTICE, "targetAlpha %d", targetAlpha);
+		//ofLog(OF_LOG_NOTICE, "targetAlpha %d", targetAlpha);
 		ofLog(OF_LOG_NOTICE, "millisecondsToFade %d", millisecondsToFade);
 
 	    // How many milliseconds dp we display each of the 255 alpha values.    
