@@ -1,9 +1,9 @@
 # trmxClient
 Video and image player made with OpenFrameworks for Raspberry Pi 2. All functions of trmxClient are addressable by OSC. 
 
-The code was written by Angela Gabereau (Montréal) in 2015 for the interactive audiovisual installation "Transmestizx" by Daniela Moreno Wray (http://dmw.hotglue.me/?transmestiza) in Quito, Ecuador. 
+The code was written by Angela Gabereau (Montréal) in 2015 for the interactive audiovisual installation "Transmestizx" by Daniela Moreno Wray (http://dmw.hotglue.me/?transmestiza) in Quito, Ecuador. Updated for full GLES2 support by Olivia Jackson (Bogotá) in 2016 while on show in Mapa Teatro http://www.midbo.co/movie/transmestizx/
 
-The application runs on Raspberry Pi 2 with Archlinux (Gstreamer 1.8.3-1 and gst-omx 1.2.0-1) and OpenFrameworks 0.9.3. Thanks to Arturo Castro from OpenFrameworks for support. Instructions for installation > http://openframeworks.cc/setup/raspberrypi/raspberry-pi-getting-started-archlinux/
+The application runs on Raspberry Pi 2 with Archlinux (Gstreamer 1.8.3-1 and gst-omx 1.2.0-1) and OpenFrameworks 0.9.4. Thanks to Arturo Castro from OpenFrameworks for support. Instructions for installation > http://openframeworks.cc/setup/raspberrypi/raspberry-pi-getting-started-archlinux/
 
 Improvements needed in the code:
 1. The media file system needs to recognise alphabetic or numerical order and not change all its media numbers when new media is added at a later letter or number.
